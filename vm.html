@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Jumi</title>
+<link href="https://fonts.googleapis.com/css?family=Sarpanch&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="IT methods for beginners in Project Website of Jumi">
+<meta name="keywords" content="vm,sandbox,Jumi,Website,IT,methods">
+<meta name="author" content="Jumi">
+<!--
+Seiten Refresher für Debbuging:
+<meta http-equiv="refresh" content="3">
+-->
+</head>
+<body>
+<div class="header">
+<nav>
+<div id="logo"><a href="https://www.jumi.biz/">jumi.biz</a></div>
+<ul class="navLinks">
+<li>
+<a href="html.html">html</a></li>
+<li>
+<a href="ports.html">ports</a></li>
+<li>
+<a href="osi.html">osi</a></li>
+<li>
+<a href="notes.html">notes</a></li>
+<li>
+<a href="proj.html">projects</a></li>
+</ul>
+<div class="menu">
+    <div class="line0"></div>
+    <div class="line1"></div>
+    <div class="line2"></div>
+</div>
+</nav>
+<script src="navibar.js"></script>
+<div class="mid">
+<div id="projects">
+<h3>Projekte:</h3>
+<p><a href="diskpdd.html"><b>Diskpart & dd</b></a> - Datenträger formatieren | 
+<a href="vm.html"><b>Virtual Machines & Sandboxen</b></a> | 
+Multiboot-System<br>
+<a href="java.html"><b>Java Scrypt & Python</b></a> - Basics | 
+Login ohne Passwort - Win & Linux | 
+Android - ADB Tools<br>
+Raspberry Pi - Putty & SSH | 
+Raspberry Pi - Squid3 Proxy | 
+Raspberry Pi - GPIO Skripts</p><br><br>
+</div>
+    <h2>Virtual Machines & Sandboxen</h2>
+    <br>
+    <b>Virtual Machines</b> sind von "Image-Dateien" erzeugte Betriebssysteme.<br>
+    Im (CPU-)Prozessor wird eine Rechnerachritekur virtualisiert, die "virtuelle Maschine".<br>
+    Je nach Anforderungen der Systemressourcen kann man so z.B. Android virtualisieren,<br>
+    so habe ich Whatsapp auf meinem PC genutzt weil meine Smartphones "bricked" waren.<br>
+    Bekannte Programme sind <b><a href="https://www.virtualbox.org/wiki/Downloads">Virtual Box</a></b> und <b><a href="https://my.vmware.com/de/web/vmware/free#desktop_end_user_computing/vmware_workstation_player/15_0">VMWare</a></b><br><br>
+    <div id="notes"><img src="pics/mbs.jpg"> <img src="pics/mbs1.jpg"></div><br>
+    Über eine sogenannte "<b>VM</b>" erreicht man erhöhte Sicherheit durch System-Kaskaden.<br>
+    Schadcode würde so normalerweise nicht mehr den Host-Rechner erreichen.<br>
+    Nach einem Infekt oder bei "verwerflichem Gebrauch" kann man alles "easy reseten" :) .<br>
+    Oder man virtualisiert ein altes Windows 98 und spielt das gute alte "Roller Coaster Tycoon"<br>
+    <br>
+    Etwas ähnliches ist eine "<b>Sandbox</b>". Sie erzeugt eine Schattenkopie des Hostsystems auf<br>
+    virtuellem "Speicherplatz". Programme und Dateien lassen sich normal benutzen,<br>
+    aber verändern dann nur die "Sandbox" und nicht das Hostsystem. (Schutz vor Malware)<br>
+    Nach Gebrauch ist das "Löschen der Sandbox" üblich.<br>
+</div>
+</body>
+</html>

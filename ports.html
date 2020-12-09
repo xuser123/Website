@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<title>Jumi</title>
+<link href="https://fonts.googleapis.com/css?family=Sarpanch&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="HTTP for beginners in Project Website of Jumi">
+<meta name="keywords" content="http,Jumi,Website,IT,methods">
+<meta name="author" content="Jumi">
+<!--
+Seiten Refresher für Debbuging:
+<meta http-equiv="refresh" content="3">
+-->
+</head>
+<body>
+<div class="header">
+<nav>
+<div id="logo"><a href="https://www.jumi.biz/">jumi.biz</a></div>
+<ul class="navLinks">
+<li>
+<a href="html.html">html</a></li>
+<li>
+<a href="ports.html">ports</a></li>
+<li>
+<a href="osi.html">osi</a></li>
+<li>
+<a href="notes.html">notes</a></li>
+<li>
+<a href="proj.html">projects</a></li>
+</ul>
+<div class="menu">
+    <div class="line0"></div>
+    <div class="line1"></div>
+    <div class="line2"></div>
+</div>
+</div>
+</nav>
+<script src="navibar.js"></script>
+<div class="mid">
+<h2>Ports & netstat</h2><br>
+<p>
+Ein Internet-Browser schickt seine Anfragen über:<br>
+<b>HTTP</b>, das <em>Hypertext-Transfer Protocol</em><br>
+oder (heutzutage) vorzugsweise über das, besser gesicherte HTTPS (= HTTP <em>Secure</em>)<br>
+<b>Ports</b> sind wie Datenpacket-Tunnel.<br><br>
+Betriebssysteme stellen Portanfragen um Verbindungen annehmen zu können.<br>
+Es gibt Standard-Ports, für bestimmte Programme fest-zugeordnete Portnummern.<br>
+HTTP läuft auf <mark>Port 80</mark> über TCP. Das HTTP-S dagegen hat <mark>Port 443</mark>.<br><br>
+Wenn man im Windows <mark>Taskmanager</mark> (oder in Linux mit den Befehlen: top; ps; tree)<br>
+die "PID" (Prozess ID) eines laufenden Programms findet kann man diesen verwenden<br>
+um über den (CMD-)Terminal-Befehl <mark><b>netstat -nano</b></mark> (&lt;-Vorhanden in Windows und Linux) die Ports<br>
+und deren Adressierung, sprich deren IPs, ausfinding machen.<br>
+<img src="pics/netstat.jpg"><br><br>
+Die Ports benutzen 2 Arten von Protokolle. Entweder "TCP oder "UDP".<br>
+Ein Programm kann über mehrere Ports laufen und beide Protokolle verwenden.<br>
+<b>TCP</b> = Transmission Control Protocol / <b>UDP</b> = User Datagramm Protocol<br>
+Über TCP verlaufen Daten "zuverlässig" im bidirektionalem Datenaustausch,<br>
+ein Verlust von Datenpacketen wird hier verhindert.<br>
+Der Schwerpunkt dieses Protokolls ist die verbindungsorientierte Paketvermittlung,<br>
+wärend bei UDP nicht wichtig ist dass "alles" ankommt, sondern "konstant" übertragen<br>
+wird, mit geduldeden "Unterbrechungen", beispielsweise beim Stream gucken oder<br>
+bei Sprachübertragungen. Daher ist der Durchlass hier größer,<br>
+dafür aber unzuverlässiger als über TCP.<br><br><br>
+<img src="pics/netstat1.jpg"><br>
+</div>
+</body>
+</html>

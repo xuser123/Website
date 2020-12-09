@@ -1,0 +1,220 @@
+ /* 23-07-2019 */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.header {
+    text-align: center;
+}
+.header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #191950;
+    font-family: 'Tangerine', serif;
+    text-shadow: 4px 4px 4px black;
+    width: 100%;
+}
+#logo a{ /* Escort Begleitung */
+    color: #67897E;
+    font-weight: bold;
+    font-size: 38px;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+.navLinks {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+.navLinks li{ /* MENU-LINKs */
+    list-style: none;
+    color: rgb(226, 226, 226);
+    letter-spacing: 4px;
+    font-weight: bold;
+    font-size: 25px;
+}
+nav{ /* NAVIGATION */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'Sarpanch', sans-serif;
+}
+.menu{ /* MENU */
+    display: none;
+    cursor: pointer;
+}
+.menu div{ /* MENU-DIVs */
+    width: 28px;
+    height: 3px;
+    background-color: rgb(226, 226, 226);
+    margin: 5px;
+    transition: all 0.15s ease;
+}
+body{
+    background-image: url("pics/escortb.png");
+    background-position-y: 8vh;
+    background-repeat: no-repeat;
+    background-color: #3c3c50;
+    color: rgb(226, 226, 226)
+}
+a {
+    text-decoration: none;
+    color: rgb(226, 226, 226);
+}
+br { /* Line Breaks */
+    line-height: 1.5em;
+}
+/* Standard Grid */
+.grid-box {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 2vh;
+    width: 100vw;
+    height: 100vh;
+    color: aquamarine;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 40% 40% 20%;
+    opacity: 0.85;
+}
+.box1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.box2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.box3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.box4 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.impressum {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+/* SCREEN */
+@media screen and (max-width: 1024px){
+    .nav-links{
+    width: 60%;
+    }
+}
+@media screen and (max-width: 768px){
+    html, body {
+      overflow-x: hidden;
+
+    }
+    .menu {
+      display: block;
+    }
+    .navLinks {
+      font-size: 20px;
+      position: absolute;
+      right: 0px;
+      height: 95vh;
+      top: 8vh;
+      background-color: #191950;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 30%;
+      transform: translateX(100%);
+    }
+    .grid-box {
+        margin-top: 2vh;
+        width: 100vw;
+        height: 100vh;
+        color: aquamarine;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 200px 200px 200px 200px 200px 200px ;
+        opacity: 0.9;
+    }
+    .box1 {
+        grid-column-start: 1;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .box2 {
+        grid-column-start: 1;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .box3 {
+        grid-column-start: 1;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .box4 {
+        grid-column-start: 1;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    .impressum {
+        grid-column-start: 1;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+    #boys {
+        padding-bottom: 2vh;
+    }
+}
+.nav-active{ /* MENU-CLICKED*/
+    transform: translateX(0%);
+    transition: transform 0.25s ease-in;
+
+}
+/* MENU-ANIMATION */
+@keyframes navLinkFade{
+    from{
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to{
+      opacity: 1;
+      transform: translateX(0px);
+    }
+}
+/* ICON-ANIMATION */
+.cross .line0{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.cross .line1{
+    opacity: 0;
+}
+.cross .line2{
+    transform: rotate(+45deg) translate(-5px, -6px);
+}
+#liste li{
+    list-style-type: none;
+    text-align: left;
+    position: absolute;
+    margin-left: 15%;
+}
+.inhalt {
+    justify-content: center; 
+    align-items: center;
+}
+#boys {
+    margin-left: auto;
+    margin-right: auto;
+    height: 180px;
+}

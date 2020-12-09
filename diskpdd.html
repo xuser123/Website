@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Jumi</title>
+<link href="https://fonts.googleapis.com/css?family=Sarpanch&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="IT methods for beginners in Project Website of Jumi">
+<meta name="keywords" content="diskpart,dd,Jumi,Website,IT,methods">
+<meta name="author" content="Jumi">
+<!--
+Seiten Refresher für Debbuging:
+<meta http-equiv="refresh" content="3">
+-->
+</head>
+<body>
+<div class="header">
+<nav>
+<div id="logo"><a href="https://www.jumi.biz/">jumi.biz</a></div>
+<ul class="navLinks">
+<li>
+<a href="html.html">html</a></li>
+<li>
+<a href="ports.html">ports</a></li>
+<li>
+<a href="osi.html">osi</a></li>
+<li>
+<a href="notes.html">notes</a></li>
+<li>
+<a href="proj.html">projects</a></li>
+</ul>
+<div class="menu">
+    <div class="line0"></div>
+    <div class="line1"></div>
+    <div class="line2"></div>
+</div>
+</nav>
+<script src="navibar.js"></script>
+<div class="mid">
+<div id="projects">
+<h3>Projekte:</h3>
+<p><a href="diskpdd.html"><b>Diskpart & dd</b></a> - Datenträger formatieren | 
+<a href="vm.html"><b>Virtual Machines & Sandboxen</b></a> | 
+Multiboot-System<br>
+<a href="java.html"><b>Java Scrypt & Python</b></a> - Basics | 
+Login ohne Passwort - Win & Linux | 
+Android - ADB Tools<br>
+Raspberry Pi - Putty & SSH | 
+Raspberry Pi - Squid3 Proxy | 
+Raspberry Pi - GPIO Skripts</p><br><br>
+</div>
+    <h2>Diskpart & dd</h2><br>
+    <p>
+    <b>Diskpart</b> ist das Windows-eigene Programm zum Formatieren von Datenträgern.<br>
+    Man öffnet es über die CMD-Eingabeaufforderung mit dem Befehl <b>diskpart</b>.<br>
+    <img src="pics/dp.jpg"><br><br>
+    Zuerst lässt man sich alle Datenträger anzeigen mit <b>list disk</b>.<br>
+    Dann selektiert man den gewünschten Datenträger mit <b> select disk</b> und dessen <b>Nummer</b>.<br>
+    <img src="pics/dp1.jpg"><br><br>
+    Auf Datenträger sind Partitionen. Auf Partitionen sind Volumen.<br>
+    Beides lässt sich mit dem list-Befehl anzeigen (wenn der Datenträger selektiert wurde).<br>
+    Der einfachste Weg um dann diese beiden Formatierungen, sprich <ins>"alles" zu löschen<br>
+    geht mit dem <b>clean all</b> Befehl.</ins> Anschließend muss der Datenträger für<br>
+    seine weitere Verwendung "neu formatiert werden", so bekommt er eine frische Partition<br>
+    mit freiem Volumen (Speicherplatz).<br><br>
+    <b>dd</b> (Disk Dump) ist die Linux Variante. Achtung! Hier kann ein Fehler großen Schaden anrichten.<br>
+    Man kann ganze Festplatten und Partitionen löschen oder klonen und mehr. Die Syntax vom dd-Befehl ist folgende:<br>
+    <code>dd if=<i>[input file]</i> of=<i>[output file]</i> &lt;<i>Optionen</i>&gt;</code><br>
+    <code>dd if=/dev/sda of=/dev/sdb bs=BYTE</code><br><br>
+    Eine wichtige Rolle beim Formatieren spielt das gewählte Datei-System.<br>
+    <b>FAT32/exFAT</b> ist der Standard für USB-Sticks und andere "Wechseldatenträger".<br>
+    Es wird von den meisten Systemen unterstützt/erkannt, hat aber einige Beschränkungen.<br>
+    <b>NTFS</b> dagegen ist für Betriebssysteme geeignet, da es Eigenschaften wie Blockeinträge,<br>
+    Zugriffsberechtigung, Datum usw. in einem reservierten MFT (Master File Table) abspeichert.<br>
+    Es sind mehrere Partitionen gleichzeit möglich und das Limit für Dateigrößen ist über 4 GiB.</p>
+</div>
+</body>
+</html>

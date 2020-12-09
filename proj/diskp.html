@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+        <h2>Diskpart & dd</h2><br>
+        <p>
+        <b>Diskpart</b> ist das Windows-eigene Programm zum Formatieren von Datenträgern.<br>
+        Man öffnet es über die CMD-Eingabeaufforderung mit dem Befehl <b>diskpart</b>.<br>
+        
+        Zuerst lässt man sich alle Datenträger anzeigen mit <b>list disk</b>.<br>
+        Dann selektiert man den gewünschten Datenträger mit <b> select disk</b> und dessen <b>Nummer</b>.<br>
+        Mit dem Befehl <b>help</b> findet man alle Möglichkeiten die sich hier bieten.<br>
+        Der help-befehl lässt sich auch für bestimmte Kategorien/Befehle speziallisieren.<br>
+        Man beginnt einfach mit <b>help</b> und schreibt den <b>Befehl</b> dahinter.<br>
+        Auf Datenträger sind Partitionen. Auf Partitionen sind Volumen.<br>
+        Beides lässt sich mit dem list-Befehl anzeigen (wenn der Datenträger selektiert wurde).<br>
+        Der einfachste Weg um dann diese beiden Formatierungen, sprich "alles" zu löschen<br>
+        geht mit dem <b>clean all</b> Befehl. Anschließend muss der Datenträger für<br>
+        seine weitere Verwendung "neu formatiert werden", so bekommt er eine frische Partition<br>
+        mit freiem Volumen (Speicherplatz).<br><br>
+        <b>dd</b> (Disk Dump) ist die Linux Variante. Die Syntax vom dd-Befehl ist folgende:<br>
+        <code>dd if=<i>Quelle</i> of=<i>Ziel</i> &lt;<i>Optionen</i>&gt;</code><br><br>
+        Eine wichtige Rolle beim Formatieren spielt das gewählte Datei-System.<br>
+        FAT32/exFAT ist der Standard für USB-Sticks und anderen "mobilen Festplatten".<br>
+        Es wird von den meisten Systemen unterstützt/erkannt, hat aber einige Beschränkungen.<br>
+        NTFS dagegen ist für Betriebssysteme geeignet, da es Eigenschaften wie Blockeinträge,<br>
+        Zugriffsberechtigung, Datum usw. in einem reservierten MFT (Master File Table) abspeichert.<br>
+        Es sind mehrere Partitionen gleichzeit möglich und das Limit für Dateigrößen ist über 4 GiB.<br><br>
+        </p>
+        <img src="x.png">
+</body>
+</html>

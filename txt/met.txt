@@ -1,0 +1,16 @@
+<!--Metadata-->
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+ <title>Browsertab-Title</title>
+ <link rel="stylesheet" type="text/css" href="style.css">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <meta name="description" content="max150chars">
+ <meta name="keywords" content="tags">
+ <meta name="author" content="creatorname">
+</head>
+<body>
+</body>
+</html>
+

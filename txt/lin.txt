@@ -1,0 +1,11 @@
+<!--Link-->
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<a href="https://www.google.com">Linktext</a>
+</body>
+</html>
+

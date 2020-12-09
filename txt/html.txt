@@ -1,0 +1,130 @@
+# HTML - Hypertext Markup Language
+
+## Basis
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+</body>
+</html>
+
+## Metadata
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+ <title>Browsertab-Title</title>
+ <link rel="stylesheet" type="text/css" href="style.css">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <meta name="description" content="max150chars">
+ <meta name="keywords" content="tags">
+ <meta name="author" content="creatorname">
+</head>
+<body>
+</body>
+</html>
+
+## Stylings
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background-color:black;}
+h1 {color:red;}
+</style>
+</head>
+<body>
+<h1>redonblack</h1>
+</body>
+</html>
+
+## Text-Formats
+
+<html>
+<head>
+</head>
+<body>
+hr horizontallinebreak<hr>
+br nextline<br>
+<pre>pre preformatteredtext</pre>
+<b>b boldtext</b>
+<strong>strong improtanttext</strong>
+<i>i italictext</i>
+<em>em emphasizedtext</em>
+<mark>mark markedtext</mark>
+<small>small smalltext</small>
+<del>del deletedtext</del>
+<ins>ins insertedtext</ins>
+<code>code codetext</code>
+</body>
+</html>
+
+## Image
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<img src="png-gif.jpg" alt="picinfo" width="800" height="600">
+</body>
+</html>
+
+## Link
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<a href="https://www.google.com">Linktext</a>
+</body>
+</html>
+
+## Lists
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<ul>
+ <li>unorderedlistitem1</li>
+ <li>unorderedlistitem2</li>
+</ul>
+<ol>
+ <li>orderedlistitem1</li>
+ <li>orderedlistitem2</li>
+</ol>
+</body>
+</html>
+
+## Inputs
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<form action="/action.php">
+Name: <input type="text" name="LastName"><br>
+<input type="submit" value="send">
+</form>
+</body>
+</html>
+
+## scrollable Textbox
+
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+<object type="text/plain" data="txt.txt" height="230" width="400">
+<param name="src" value="txt.txt">
+</object>
+</body>
+</html>

@@ -1,0 +1,43 @@
+
+Microsoft DiskPart-Version 10.0.17763.1
+
+Copyright (C) Microsoft Corporation.
+Auf Computer: DESKTOP-LOPI0AU
+
+DISKPART> list disk
+
+  Datenträger ###  Status         Größe    Frei     Dyn  GPT
+  ---------------  -------------  -------  -------  ---  ---
+  Datenträger 0    Online          465 GB      0 B
+  Datenträger 1    Online          232 GB  4898 MB
+
+DISKPART> select disk 0
+
+Datenträger 0 ist jetzt der gewählte Datenträger.
+
+DISKPART> detail disk
+
+Samsung SSD 860 EVO 500GB
+Datenträger-ID: "6D4847D5"
+Typ   : "SATA"
+Status : "Online"
+Pfad   : "0"
+Ziel : "0"
+LUN-ID : "0"
+Speicherortpfad : "PCIROOT(0)#PCI(1F02)#ATA(C00T00L00)"
+Aktueller schreibgeschützter Zustand: Nein
+Schreibgeschützt  : Nein
+Startdatenträger  : Ja
+Auslagerungsdatei-Datenträger  : Ja
+Ruhezustandsdatei-Datenträger  : Nein
+Absturzabbild-Datenträger  : Ja
+Clusterdatenträger : Nein
+
+  Volume ###  Bst  Bezeichnung  DS     Typ         Größe    Status     Info
+  ----------  ---  -----------  -----  ----------  -------  ---------  --------
+  Volume 1     C                NTFS   Partition     86 GB  Fehlerfre  Startpar
+  Volume 2                      NTFS   Partition     59 GB  Fehlerfre  System
+  Volume 3     F   APPS         NTFS   Partition   6000 MB  Fehlerfre
+  Volume 4     G   ETC          NTFS   Partition    314 GB  Fehlerfre
+
+DISKPART>

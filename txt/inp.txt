@@ -1,0 +1,17 @@
+<!--Inputs-->
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<form action="/action.php">
+Name: <input type="text" name="LastName"><br>
+<input type="submit" value="send">
+</form>
+</body>
+</html>
+
+<!--Scriptdatei:-->
+
+<!--(...Desktop/Neuer Ordner/action.php)-->

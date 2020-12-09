@@ -1,0 +1,36 @@
+Java Script & Python
+Java Script ist die beliebteste Technologie im IT-Bereich,
+gefolgt von "SQL", "Java" und "C#". 
+Eine Programmiersprache entwickelt um Benutzerinteraktionen
+in Webbrowsern auswerten zu können und als Eweiterung für HTML und CSS.
+Auch Anwendungsprogramme, Spiele, Server und Microcontroller
+lassen sich damit programmieren.
+
+function helloworld() {
+  alert("hello world");
+}
+window.onload = helloworld;
+Java Script Code ist manchmal auch (direkt) in einem HTML Dokument eingebettet:
+
+<script>
+  document.getElementById("eineID").innerHTML = "veränderter Text";
+</script>
+
+Wärend JavaScript Vieles von sich aus "intepretiert", müssen in den meisten
+anderen Programmiersprachen viele Elemente genauer definiert sein.
+Das macht Java Script beliebt und relativ einfach.
+In Python beispielsweise ist es normalerweise wichtig den Typ einer Angabe
+zu beschreiben, was in Java Script auch weggelassen werden kann
+da es von selbst erkannt wird.
+Java Script erkennt durch die typische Eingabe mit Anführungsstrichen
+dass es sich um einen String handelt.
+In Python wird vor den Anführungszeichen noch extra erwähnt dass ein String folgt.
+
+var = str("einstring")
+
+und in Java Script:
+
+var = "einstring".
+
+
+Python Basics:

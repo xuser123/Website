@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<title>Jumi</title>
+<link href="https://fonts.googleapis.com/css?family=Sarpanch&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="OSI model for beginners in Project Website of Jumi">
+<meta name="keywords" content="osi, model, Jumi,Website,IT,methods">
+<meta name="author" content="Jumi">
+<!--
+Seiten Refresher für Debbuging:
+<meta http-equiv="refresh" content="3">
+-->
+</head>
+<body>
+<div class="header">
+<nav>
+<div id="logo"><a href="https://www.jumi.biz/">jumi.biz</a></div>
+<ul class="navLinks">
+<li>
+<a href="html.html">html</a></li>
+<li>
+<a href="ports.html">ports</a></li>
+<li>
+<a href="osi.html">osi</a></li>
+<li>
+<a href="notes.html">notes</a></li>
+<li>
+<a href="proj.html">projects</a></li>
+</ul>
+<div class="menu">
+    <div class="line0"></div>
+    <div class="line1"></div>
+    <div class="line2"></div>
+</div>
+</div>
+</nav>
+<script src="navibar.js"></script>
+<div class="mid">
+<h2>OSI „Open Systems Interconnection“</h2><br>
+<p>
+Das OSI Modell beschreibt wie Daten übermittelt werden.<br>
+Es hat <mark>7 Schichten</mark>, in denen Daten verkapselt und weiterverkapselt werden.<br>
+Die Nummerierung ist aber nicht als Reihenfolge zu verstehen,<br>
+da die Informationen in beide Richtungen fließen.<br>
+Auch "ISO-OSI-Modell" genannt.</p>
+<div class="mid" id="osi">
+<table cellspacing="6">
+  <tr>
+    <th>Layer</th>
+    <th>Schicht</th>
+    <th>Funktion</th>
+  </tr>
+  <tr>
+    <td><mark>#1 Physical Layer</mark></td>
+    <td>Bitübertragungsschicht</td>
+    <td><small>Die Bits die durch die Leitungen fließen</small></td>
+  </tr>
+  <tr>
+    <td><mark>#2 Data Link Layer</mark></td>
+    <td>Sicherungsschicht</td>
+    <td><small>Übersetzung auf "Hardware-Sprache"</small></td>
+  </tr>
+  <tr>   
+    <td><mark>#3 Network Layer</mark></td>
+    <td>Vermittlungsschicht</td>
+    <td><small>Netzwerk - Routing</small></td>
+  </tr>
+  <tr>
+    <td><mark>#4 Transport Layer</mark></td>
+    <td>Transportsschicht</td>
+    <td><small>Quelle und Ziel - Adressierung</small></td>
+  </tr>
+  <tr>
+    <td><mark>#5 Session Layer</mark></td>
+    <td>Sitzungsschicht</td>
+    <td><small>Daten mit Benutzer-Informationen - Metadaten</small></td>
+  </tr>
+  <tr>
+    <td><mark>#6 Presentation Layer</mark></td>
+    <td>Darstellungsschicht</td>
+    <td><small>Der ausgeführte Prozess - "sichtbar"</small></td>
+  </tr>
+  <tr>
+    <td><mark>#7 Application Layer</mark></td>
+    <td>Anwendungsschicht</td>
+    <td><small>Der ausgeführte Prozess - "unsichtbar"</small></td>
+  </tr>
+</table><br>
+<img id="myImg" src="pics/osi.jpg">
+<!-- Image Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+<script src="imagemodal.js"></script>
+<br>
+<img src="pics/matroschka.jpg"><img src="pics/iso.png">
+</div>
+</div>
+</body>
+</html>
